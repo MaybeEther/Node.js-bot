@@ -28,7 +28,7 @@ bot.on('message', msg => {
                 bot.chat("/tpy " + found[1])
                 console.log(found[1] + " Has TPed to me!")
             }else{
-				bot.chat(found[1] + "Ur not a NN so Fuck OFF!")
+		bot.chat(found[1] + "Ur not a NN so Fuck OFF!")
 			}
         }
  });
