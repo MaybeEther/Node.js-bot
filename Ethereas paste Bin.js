@@ -107,9 +107,8 @@ bot.on("login", async => {
 })
 
 var Spam = 0
-const random = Math.floor(Math.random() * Spammer.length);
-
 while(Spam > 0){
+	const random = Math.floor(Math.random() * Spammer.length);
 	bot.chat(Spammer[random]);
 }
 String Spammer[] =
