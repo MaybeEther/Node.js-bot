@@ -7,7 +7,7 @@ does:
 Tpa (with whitelist)
 spammer
 anti-afk
-remote controled movment
+remote controlled movment
 ingame chat to discord bridge
 discord to in game echo command 
 
