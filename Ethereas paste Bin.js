@@ -79,7 +79,7 @@ bot.on("login", async => {
 }else if (command == "Start_Spammer") {
 	if (Spam > 0){
 		const sON = new Discord.MessageEmbed()
-    	.setDescription(`:x: IDIOT SPAMMER IS ON ALLREADY`)
+    	.setDescription(`:x: IDIOT SPAMMER IS ON ALREADY`)
     	.setColor(color)
     msg.channel.send(sOn)
 	}else{
