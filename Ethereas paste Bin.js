@@ -74,23 +74,59 @@ bot.on("login", async => {
 // updated the echo command, added a autor  tag to the in game chat, example: "Ethereas >> Team NN On Top"
 
  ------------------------------------------------------------------------------------------------------------
- 
+//______________
+//Spamer variables
+var Spam = 0;
+var D = 1;  
+//_______________
+	
+	
+
+//spammer lists-
+const Spammer = [
+    "filler",
+    "yes",
+    "filler1"
+];
+const Spammer2 = [
+  "1test",
+  "2test",
+  "3test"
+];
+//-------------
+	
+//-------------
+//Spammer ----
+//-------------
 
 }else if (command == "Start_Spammer") {
 	if (Spam > 0){
 		const sON = new Discord.MessageEmbed()
-    	.setDescription(`:x: IDIOT SPAMMER IS ON ALREADY`)
+    	.setDescription(`:x: IDIOT SPAMMER IS ON ALLREADY`)
     	.setColor(color)
     msg.channel.send(sOn)
 	}else{
+        var X = Spammer2;
 		Spam++
 		const spami = new Discord.MessageEmbed()
     	.setDescription(`:white_check_mark: Time To Spam!`)
     	.setColor(color)
     msg.channel.send(spami)
 	}
-
-
+}else if (command == "Start_Spammer2") {
+    if (Spam > 0){
+        const sON = new Discord.MessageEmbed()
+        .setDescription(`:x: IDIOT SPAMMER IS ON ALLREADY`)
+        .setColor(color)
+    msg.channel.send(sOn)
+    }else{
+        var X = Spammer;
+        Spam++
+        const spami = new Discord.MessageEmbed()
+        .setDescription(`:white_check_mark: Time To Spam!`)
+        .setColor(color)
+    msg.channel.send(spami)
+    }
 }else if (command == "Stop_Spammer")
 	if (Spam <= 0){
 		const sOFF = new Discord.MessageEmbed()
@@ -106,35 +142,17 @@ bot.on("login", async => {
 	}
 })
 
-var Spam = 0
-while(Spam > 0){
-	const random = Math.floor(Math.random() * Spammer.length);
-	bot.chat(Spammer[random]);
+if(Spam > 0){
+    Loop();
 }
-String Spammer[] =
-	"Team NN Is on Top",
-	"Team NN is recruiting bold gang only tho!",
-	"Team NN does the funny",
-	"Ethereas Is Based",
-	"PixelatedBrayden Is Based",
-	"Pr3roxDLC Is Based",
-	"LordOniox Is Based",
-	"TransAreObjects Is Based",
-	"Ansh__ Is Based",
-	"Dexter___ Is Based",
-	"sxyChxis is Based",
-	"SniXzy Is Based",
-	"0b0tguy Is Based",
-	"06d Is Based",
-	"papahappa Is Based",
-	"Street_y Is Based",
-	"tntpower10 Is Based",
-	"Team NN Owns me and all",
-	"Got banned from the 0b discord? join Team NN",
-	"Dont u dare ignore this bot!",
-	"I sure hope this works!",
-	"sub to Ethereas on ytb",
-	"owstrev Is Based"
-	};
+function Loop() {       
+  setTimeout(function() {  
+    const random = Math.floor(Math.random() * X.length);
+    bot.chat(X[random]);
+    D++;          
+    if (D < 10) {    
+      Loop();        
+    }                       
+  }, 300);
+}
 
-// Spammer, picks a random sentance from the list and sends it, automaticly you can specify how much time between the messages
