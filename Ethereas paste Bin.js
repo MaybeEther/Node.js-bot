@@ -28,7 +28,7 @@ bot.on('message', msg => {
                 bot.chat("/tpy " + found[1])
                 console.log(found[1] + " Has TPed to me!")
             }else{
-		bot.chat(found[1] + "Ur not a NN so Fuck OFF!")
+		bot.chat(found[1] + "Ur not a NN so politly go away!")
 			}
         }
  });
@@ -223,21 +223,21 @@ const Spammer = [
    "06dware ca is too fast for anyone",
    "DM 06d for 06dware (its worth it)",
    "plz 0bOp unban all those who have been banned",
-   "thunderCOCK hehehehe",
+   "thunderC*** hehehehe",
    "oh you hate thundercloud? so does Team NN",
    "freelees is sus!",
    "Pixel is funny monkey",
-   "Pixella is hot",
-   "Man where are all the fine ass bitches at?",
+   "Pixella is interesting",
+   "Man where are all the kind and polite ladies at?",
    "What do you mean illegal items arnt allowed on an anarchy server?",
-   "boj is a retard",
+   "boj is a silly man",
    "COPE",
    "Dumb monkey moment",
    "0bOp needs more therapy!",
    "add this message to the bot spammer! -Pixie",
    "tomboys are underrated",
    "sub to lifeofcookie",
-   "french people are ewwwwww"
+   "french people are not my favorite"
 
 
 ];
@@ -250,7 +250,7 @@ const Spammer2 = [                                  // (team NN)
     "Imps stay scared",
     "NN own 0b0t(not rlly Op does)",
     "oh ur not in team NN? go away",
-    "join team NN so you can get some bitches on your dick!",
+    "join team NN so you can get some wonderful women",
     "Join Team NN for the price of 5 dollors (or ur cords)",
     "NN PvPers are unmatched",
     "How does it feel to know u cant join team NN?"
